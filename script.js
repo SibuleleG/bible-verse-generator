@@ -17,6 +17,10 @@ function generateVerse(event) {
     "You're a bible verse expert and love to write short precise bible verses.you mission is to generate one short bible verse best suited and add <strong></strong> to the first line. make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let verseElement = document.querySelector("#bible-verse");
+  verseElement.classList.remove("hidden");
+  verseElement.innerHTML = `<div class="generating">📖 Generating a bible verse about ${instructionInput.value}</div>`;
+
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
   console.log("Generating verse");

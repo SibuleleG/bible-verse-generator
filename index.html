@@ -16,20 +16,23 @@
       </header>
 
       <main>
-        <form id="verse-generator">
-          <input
-            type="text"
-            placeholder="Enter word of the day"
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instruction"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
+        <div class="form-container">
+          <form id="verse-generator">
+            <input
+              type="text"
+              placeholder="Enter word of the day"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instruction"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <div class="hint">i.e: Love,Faith or Strength</div>
+        </div>
 
-        <div class="bible-verse" id="bible-verse"></div>
+        <div class="bible-verse hidden" id="bible-verse"></div>
       </main>
 
       <footer>
