@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI bible verse</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="style.css" />
+    <title>AI bible verse</title>
   </head>
   <body>
     <div class="container">
@@ -21,6 +24,7 @@
             required
             autocomplete="off"
             class="instruction"
+            id="user-instruction"
           />
           <input type="submit" class="submit-btn" />
         </form>
@@ -39,7 +43,7 @@
           target="_blank"
           >Github</a
         >
-        hosted on <a href="https://funny-elf-2622e4.netlify.app/">Nelify</a>.
+        hosted on <a href="https://funny-elf-2622e4.netlify.app/">Netlify</a>.
       </footer>
     </div>
     <script src="script.js"></script>
