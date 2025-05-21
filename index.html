@@ -9,11 +9,11 @@
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to th AI bible verse Generator</h1>
+        <h1>AI bible Verse Generator</h1>
       </header>
 
       <main>
-        <form>
+        <form id="verse-generator">
           <input
             type="text"
             placeholder="Enter word of the day"
@@ -25,11 +25,7 @@
           <input type="submit" class="submit-btn" />
         </form>
 
-        <div class="bible-verse">
-          I can do all things through him who strengthens me.
-          <br />
-          <strong>Philippians 4:13</strong>
-        </div>
+        <div class="bible-verse" id="bible-verse"></div>
       </main>
 
       <footer>
@@ -46,5 +42,6 @@
         hosted on <a href="https://funny-elf-2622e4.netlify.app/">Nelify</a>.
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
