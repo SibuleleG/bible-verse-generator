@@ -21,10 +21,6 @@ function generateVerse(event) {
   verseElement.classList.remove("hidden");
   verseElement.innerHTML = `<div class="generating">📖 Generating a bible verse about ${instructionInput.value}</div>`;
 
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-  console.log("Generating verse");
-
   axios
     .get(apiUrl)
     .then(displayVerse)
